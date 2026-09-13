@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zhenya Ghazaryan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <button class="menu-toggle" type="button" aria-label="Toggle navigation">
+                ☰
+            </button>
+            <ul>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#code">Code Examples</a></li>
+                <li><a href="#experience">Work Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#english">English Language</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <h1>Zhenya Ghazaryan</h1>
+
+        <div class="profile">
+            <img src="images/profile-photo.png" alt="Zhenya Ghazaryan">
+
+            <section id="contact">
+                <h2>Contact</h2>
+                <ul class="contact-list">
+                    <li><strong>GitHub:</strong> <i><a href="https://github.com/zhenya-99" target="_blank">zhenya-99</a></i></li>
+                    <li><strong>Discord:</strong> <i>zhenyah99</i></li>
+                    <li><strong>Email:</strong>  <i><a href="mailto:zhenya.harutyunyan99@gmail.com">zhenya.harutyunyan99@gmail.com</a></i></li>
+                </ul>
+            </section>
+        </div>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                I’m a Frontend Developer with a background in JavaScript and web development. I’m currently focused on strengthening my JavaScript skills and plan to learn React to grow as a frontend developer. I enjoy solving problems, learning new technologies, and building practical projects. I’m motivated, persistent, and always willing to learn and improve.
+            </p>
+        </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML5, CSS3, Bootstrap</li>
+                <li>JavaScript (ES6+)</li>
+                <li>REST API Integration</li>
+                <li>Fetch API / Async JavaScript</li>
+                <li>DOM Manipulation</li>
+                <li>Responsive &amp; Adaptive Design</li>
+                <li>Git, GitHub</li>
+                <li>jQuery (basic knowledge)</li>
+            </ul>
+        </section>
+        <section id="code">
+            <h2>Code Examples</h2>
+            <h3>Codewars: Regex validate PIN code</h3>
+            <pre><code>function validatePIN(pin) {
+    const arrPin = pin.split("");
+
+    if (pin.length === 4 || pin.length === 6) {
+        return arrPin.every((item) =&gt; item &gt;= "0" &amp;&amp; item &lt;= "9");
+    }
+
+    return false;
+}</code></pre>
+
+            <h3>Codewars: Create Phone Number</h3>
+            <pre><code>function createPhoneNumber(numbers) {
+    let phoneNumber = "(xxx) xxx-xxxx";
+
+    numbers.forEach((item) =&gt; {
+        phoneNumber = phoneNumber.replace("x", item);
+    });
+
+    return phoneNumber;
+}</code></pre>
+        </section>
+        <section id="experience">
+            <h2>Work Experience</h2>
+            <article>
+                <h3>Web Developer — Cool Corner LLC</h3>
+                <p><strong>Aug 2020 – Oct 2022</strong></p>
+                <ul>
+                    <li>Built and maintained multi-page websites using HTML, CSS, Bootstrap, JavaScript, and jQuery</li>
+                    <li>Developed UI layouts and reusable components for client projects</li>
+                    <li>Fixed frontend bugs and improved cross-browser compatibility</li>
+                    <li>Worked with Git for version control, including branching and pull requests</li>
+                </ul>
+
+                <h4>Key Project: Accounting Company Website</h4>
+                <p><a href="https://safeinvest.am" target="_blank">safeinvest.am</a></p>
+                <ul>
+                    <li>Developed responsive UI components for a real client project</li>
+                    <li>Built structured pages using HTML, CSS, Bootstrap, and JavaScript</li>
+                    <li>Ensured consistent UI behavior across devices</li>
+                    <li>Implemented frontend features based on business requirements</li>
+                </ul>
+            </article>
+            <article>
+                <h3>Career Break — Full-Time Parenting</h3>
+
+                <p><strong>Oct 2022 – Present</strong></p>
+                <ul>
+                    <li>Continued practicing frontend development and improving JavaScript skills</li>
+                    <li>Built pet projects with API integration and responsive UI</li>
+                    <li>Completed a 6-month JavaScript intensive program at Armenian Code Academy</li>
+                </ul>
+            </article>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <article>
+                <h3>Users Directory Application (API Integration)</h3>
+                <p><a href="https://github.com/zhenya-99/users-directory" target="_blank">github.com/zhenya-99/users-directory</a></p>
+                <ul>
+                    <li>Built a responsive single-page application using JavaScript, HTML, and CSS</li>
+                    <li>Integrated external REST API and handled asynchronous data using Fetch API</li>
+                    <li>Implemented dynamic DOM rendering based on API responses</li>
+                    <li>Added loading and error states to improve user experience</li>
+                    <li>Optimized layout for different screen sizes and devices</li>
+                </ul>
+            </article>
+        </section>
+        <section id="education">
+            <h2>Education</h2>
+
+            <article>
+                <h3>Yerevan State University</h3>
+                <p><strong>Bachelor's Degree</strong></p>
+                <p>Informatics and Applied Mathematics</p>
+                <p>2017–2021</p>
+            </article>
+            <article>
+                <h3>Armenian Code Academy</h3>
+                <p><strong>JavaScript from A to Z</strong></p>
+                <p>2026</p>
+            </article>
+            <article>
+                <h3>Cyber Tech</h3>
+                <p><strong>Principles of C++</strong></p>
+                <p>2018</p>
+            </article>
+        </section>
+        <section id="english">
+            <h2>English Language</h2>
+            <h3>B2 (Upper-Intermediate)</h3>
+            <p>I use English for reading technical documentation, learning new technologies, and improving my development skills.</p>
+        </section>
+    </main>
+
+    <footer>
+        <a href="https://github.com/zhenya-99" target="_blank">GitHub</a>
+        <span>2026</span>
+        <a href="https://rs.school/courses/short-track" target="_blank">
+            <img src="images/rss-logo.svg" alt="RS School">
+        </a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
