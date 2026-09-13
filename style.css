@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding-top: 75px;
+    font-family: Arial, sans-serif;
+    color: #222;
+}
+
+header {
+    background-color: #3c3c3c;
+    border-radius: 0 0 12px 12px;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 1000px;
+    z-index: 1000;
+}
+
+header, main, footer {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav a:hover {
+    color: #b4d9f9;
+}
+
+a {
+    color: inherit;
+}
+
+h1 {
+    padding-bottom: 20px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    background-color: aliceblue;
+    border-radius: 12px;
+    padding: 15px;
+}
+.profile img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.profile #contact {
+    margin-top: 0;
+}
+
+.contact-list {
+    padding: 0;
+    list-style: none;
+}
+.contact-list li {
+    margin-bottom: 10px;
+}
+.contact-list a {
+    text-decoration: none;
+}
+.contact-list a:hover {
+    text-decoration: underline;
+}
+.contact-list strong {
+    display: inline-block;
+    width: 75px;
+}
+
+#about {
+    background-color: #fff0f0;
+}
+
+#skills {
+    background-color: #fffbf0;
+}
+
+#code {
+    background-color: #f0f8ff9c;
+}
+
+#experience {
+    background-color: #f9f0ffab;
+}
+
+#projects {
+    background-color: aliceblue;
+}
+
+#education {
+    background-color: #f0fff8;
+}
+
+#english {
+    background-color: #f0f5ff;
+}
+
+section {
+    padding: 15px;
+    margin-top: 35px;
+    scroll-margin-top: 95px;
+    border-radius: 12px;
+}
+
+pre {
+    overflow-x: auto;
+    padding: 16px;
+    background: #e7e7e77d;
+}
+
+footer {
+    background-color: #ffb749a8;
+    border-radius: 12px 12px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer img {
+    width: 50px;
+    height: auto;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+@media (max-width: 600px) {
+    .profile {
+        flex-direction: column;
+        padding: 15px 0 0;
+    }
+}
