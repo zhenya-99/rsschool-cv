@@ -4,6 +4,8 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
+    overscroll-behavior-x: none;
 }
 
 body {
@@ -11,6 +13,8 @@ body {
     padding-top: 75px;
     font-family: Arial, sans-serif;
     color: #222;
+    overflow-x: hidden;
+    overscroll-behavior-x: none;
 }
 
 header {
@@ -23,6 +27,8 @@ header {
     width: 100%;
     max-width: 1000px;
     z-index: 1000;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
 }
 
 header, main, footer {
@@ -140,6 +146,9 @@ pre {
     background: #e7e7e77d;
 }
 
+article {
+    padding: 5px 0;
+}
 footer {
     background-color: #ffb749a8;
     border-radius: 12px 12px 0 0;
@@ -174,7 +183,6 @@ footer a {
     nav ul.open {
         display: flex;
         flex-direction: column;
-        align-items: stretch;
         gap: 0;
         margin-top: 15px;
     }
@@ -193,6 +201,9 @@ footer a {
 @media (max-width: 600px) {
     .profile {
         flex-direction: column;
-        padding: 15px 0 0;
+        padding: 25px 0 0;
+    }
+    .contact-list a {
+        overflow-wrap: anywhere;
     }
 }
